@@ -6,8 +6,8 @@ print(f"b : {id(b)}")
 
 print(a is b)
 
-c = 1000
-d = 1000
+c = 1000000000000000
+d = 1000000000000000
 
 print(f"c : {id(c)}")
 print(f"d : {id(d)}")
