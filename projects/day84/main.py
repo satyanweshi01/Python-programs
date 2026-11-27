@@ -5,13 +5,18 @@ from gamestate import checkgamestate
 
 gameloop = True
 
+player1 = input("Enter the name of the player 1: ")
+player2 = input("Enter the name of the player 2: ")
+
+
+
 players = [
     {
-        "name":"Player1",
+        "name":f"{player1}",
         "sign":"X"
     },
     {
-        "name":"Player2",
+        "name":f"{player2}",
         "sign":"O"
     }
 ]
@@ -23,7 +28,7 @@ next_player = next(player_loop)
 
 while gameloop:
     
-    print(f"{players[next_player]["name"]} \nSign : {players[next_player]["sign"]}")
+    print(f"Player: {players[next_player]["name"]} \nSign: {players[next_player]["sign"]}")
     
     user_input = eval(input("Enter position(eg. (x,y)): "))
     
